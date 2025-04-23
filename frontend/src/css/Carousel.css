@@ -1,0 +1,15 @@
+.container {
+    width: 100vw;
+    height: 450px;
+    display: flex;               /* Make the container flex */
+    justify-content: center;     /* Center horizontally */
+    align-items: center;         /* Center vertically */
+    overflow: hidden;
+  }
+  
+  .carouselimg {
+    width: 100vw;
+    max-height: 400px;
+    object-fit: fill;           /* Crop image edges while maintaining center */
+  }
+  

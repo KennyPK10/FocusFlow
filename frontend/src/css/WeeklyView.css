@@ -1,0 +1,143 @@
+/* Reset any default margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+.no-padding-wrapper {
+  overflow-x: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.weekly-view {
+  padding: 1rem 2rem;
+}
+
+.day-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.day-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #343a40;
+}
+
+.day-tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.day-task-item {
+  padding: 0.8rem;
+  border-radius: 6px;
+  background-color: #f8f9fa;
+  border-left: 3px solid #4a6fdc;
+}
+
+.task-name {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.progress {
+  height: 6px;
+  border-radius: 3px;
+  background-color: #e9ecef;
+}
+
+.progress-bar {
+  background-color: #e67e22;
+}
+
+.no-tasks {
+  color: #6c757d;
+  font-style: italic;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.weekly-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+/* Full width banner with no gaps */
+.full-width-banner {
+  background-color: orange;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  width: 100%;
+  margin: 0;
+}
+
+.no-top-margin {
+  margin-top: 0 !important;
+}
+
+.motto {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .motto {
+    font-size: 1.5rem;
+  }
+}
+
+.section-title {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Make primary buttons orange */
+.btn-primary {
+  background-color: orange !important;
+  border-color: orange !important;
+  transition: all 0.8s ease !important;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: orange !important;
+  border-color: orange !important;
+  transform: scale(1.1) !important;
+  box-shadow: 0 0 0 0.1rem rgba(230, 126, 34, 0.25) !important;
+}
+
+/* Make primary badges orange */
+.badge.bg-primary {
+  background-color: orange !important;
+} 

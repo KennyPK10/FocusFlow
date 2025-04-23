@@ -1,0 +1,187 @@
+body, html {
+  min-height: 100vh;
+}
+
+/* ----- Navbar Container Fix ----- */
+.navbar.custom-navbar {
+  height: 56px; /* Consistent with Bootstrap */
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid orange;
+}
+
+/* Prevent elements inside navbar from overriding height */
+.navbar .container,
+.navbar .container > div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: visible !important;
+}
+.nav-btn {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  line-height: normal;
+}
+
+/* Make nav links perfectly aligned and capsule-shaped */
+/* Custom Navbar height control */
+.custom-navbar {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000;
+  min-height: 60px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Brand styling */
+.brand-text {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+/* Nav buttons styling */
+.nav-btn {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center;
+  height: 40px;
+  min-width: 150px;
+  padding: 0 20px;
+  margin: 0 5px;
+
+  border-radius: 25px;
+  font-weight: 300;
+  font-size: 1rem;
+  background-color: transparent;
+  color: black;
+  text-decoration: none;
+  transition: all 0.8s ease !important;
+}
+
+.nav-btn:hover {
+  font-weight: 400;
+  background-color: orange;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Create Task button */
+#create-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 150px;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 25px;
+  background-color: orange;
+  border: none;
+  font-weight: 300;
+  color: white;
+  transition: all 0.8s ease !important;
+}
+
+#create-btn:hover {
+  font-weight: 400;
+  transform: scale(1.1);
+  color: black;
+}
+
+/* User icon button */
+#dropdown-user {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  border-radius: 8px;
+  
+}
+
+.ditem:hover {
+  background-color: orange !important;
+  color: white !important;
+}
+
+.task-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.home{
+  background-color: orange;
+}
+.card-list{
+  width: 60%;
+}
+.card-list .card{
+  all:unset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #ffc107;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 150px;          /* Optional fixed width */
+  max-height: 150px;     /* Optional height */
+  background-color: #fff;
+  transition: all 0.5s ease !important;
+}
+
+.card-list .card:hover{
+  background-color: orange;
+  transform: scale(1.1);
+}
+
+.card-list .card-title {
+  margin: 0;
+  padding: 0;
+  font-size: 5rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+.card-list .card-subtitle {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  color: #777;
+  text-align: center;
+}
+
+#dashboard{
+  border-top:solid 2px #ffc107;
+  border-bottom:solid 2px #ffc107;
+  
+}
+
+.rows{
+    background-color: rgba(255, 165, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+}
+.title_s{
+  text-align: left;
+  
+}
+
+
+
