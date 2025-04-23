@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import TaskForm from "./components/TaskForm";
 import { Nav } from "react-bootstrap";
 import { Navbar } from "react-bootstrap";
-import 'bootstrap-icons/font/bootstrap-icons.css';
+//import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Card } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
