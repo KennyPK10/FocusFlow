@@ -14,6 +14,7 @@ const task=require('./models/task');
 require('dotenv').config();
 
 const app = express();
+app.set('trust proxy', 1); // trust first proxy (for render.com HTTPS)
 app.disable('x-powered-by');
 app.use(helmet())
 app.use(cors({
@@ -123,6 +124,7 @@ app.post('/api/login', [
                     sameSite: process.env.NODE_ENV === 'production'? 'None' : 'Lax', // or 'None' if using https
                     secure: process.env.NODE_ENV === 'production'? true : false     // true only for https
                 });
+                console.log("Cookie set");
                 res.status(200).json({comment:'Valid Credentials entered',u_id: currUser._id});
             }
             else{
